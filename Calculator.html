@@ -4,9 +4,13 @@
 	<meta charset="UTF-8">
 	<title>Calculator</title>
 	<script>
-		function cube(){
+		function cubo(){
 			var num=document.getElementById("n1");
 			num.value=Math.pow(num.value, 3);
+		}
+		function cuarta(){
+			var num=document.getElementById("n1");
+			num.value=Math.pow(num.value, 4);
 		}
 		function seno(){
 			var num=document.getElementById("n1");
@@ -20,5 +24,6 @@ Number:
 <input type="text" id="n1"><p></p>
 <button onclick="cube()">X^3</button>
 <button onclick="seno()">Sin(x)</button>
+<button onclick="cuarta()">X^4</button>
 </body>
 </html>
