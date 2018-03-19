@@ -4,6 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Calculator</title>
 	<script>
+		function cuadrado(){
+			var num=document.getElementById("n1");
+			num.value=Math.pow(num.value, 2);
+		}
 		function cube(){
 			var num=document.getElementById("n1");
 			num.value=Math.pow(num.value, 3);
@@ -22,6 +26,7 @@
 <h1>Calculadora de Janet Torres</h1>
 Number:
 <input type="text" id="n1"><p></p>
+<button onclick="cuadrado()">X^2</button>
 <button onclick="cube()">X^3</button>
 <button onclick="seno()">Sin(x)</button>
 <button onclick="cuarta()">X^4</button>
